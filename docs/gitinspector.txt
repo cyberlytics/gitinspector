@@ -144,11 +144,11 @@ REPORTING BUGS
 --------------
 Report gitinspector bugs to gitinspector@ejwa.se
 
-The gitinspector project page: <https://github.com/ejwa/gitinspector>
+The gitinspector project page: <https://github.com/cyberlytics/gitinspector>
 
 If you encounter problems, be sure to read the FAQ first: <https://github.com/ejwa/gitinspector/wiki/FAQ>
 
-There is also an issue tracker at: <https://github.com/ejwa/gitinspector/issues>
+There is also an issue tracker at: <https://github.com/cyberlytics/gitinspector/issues>
 
 COPYRIGHT
 ---------

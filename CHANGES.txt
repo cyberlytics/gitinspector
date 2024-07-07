@@ -1,3 +1,10 @@
+gitinspector (0.5.0)
+
+	Major release with python upgrade and containerization.
+	
+	* Migration to python3 (from jpwhite3)
+	* Dockerfile (by cyberlytics)
+
 gitinspector (0.4.4)
 
 	Minor release with some minor fixes.

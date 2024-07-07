@@ -11,5 +11,5 @@ To run gitinspector; please start it via the gitinspector.py script. Use
 the -h or --help flags to get help about available options.
 
 It is also possible to set gitinspector options using the "git config"
-command. Refer to the project page at https://github.com/ejwa/gitinspector
+command. Refer to the project page at https://github.com/cyberlytics/gitinspector
 for more information.

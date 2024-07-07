@@ -39,7 +39,7 @@ lint: ## check style with flake8 and pylint
 	flake8 gitinspector tests --count --select=E9,F63,F7,F82 --show-source --statistics --builtins="_"
 	# exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
 	flake8 gitinspector tests --count --ignore=E203,E722,W503,E401,C901 --exit-zero --max-complexity=10 --max-line-length=127 --statistics --builtins="_"
-	pylint --rcfile=.pylintrc gitinspector
+	pylint --exit-zero --rcfile=.pylintrc gitinspector
 
 test: ## run tests quickly with the default Python
 	pytest
@@ -63,13 +63,15 @@ push-tagged-version: tag-version
 	@export VERSION_TAG=`python3 -c "from gitinspector.version import __version__; print(__version__)"` \
 	&& git push origin v$$VERSION_TAG
 
-dist: clean ## builds source and wheel package
-	python3 setup.py sdist
-	python3 setup.py bdist_wheel
+dist: ## builds source and wheel package
+	#python3 setup.py sdist
+	#python3 setup.py bdist_wheel
+	python -m build .
 	ls -l dist
 
-install: clean ## install the package to the active Python's site-packages
-	python3 setup.py install
+install: ## install the package to the active Python's site-packages
+	#python3 setup.py install
+	pip install .
 
 requirements:
 	pipenv requirements > requirements.txt
